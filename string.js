@@ -10,7 +10,13 @@ console.log(str.toLowerCase().toUpperCase()); // str.toLowerCase() = "hello"
 console.log(" mandeep ghotra  ".toUpperCase().trim()); // "MANDEEP GHOTRA"
 console.log(" mandeep ghotra  ".trim().toUpperCase().length); // 14
 
-console.log(str[0] + str[1] + str[2] + str[3] + str[4]); // console.log("H" + "e" + "l" + "l" + "o");
+console.log(
+  str[0].toUpperCase() +
+    str[1].toUpperCase() +
+    str[2].toUpperCase() +
+    str[3].toUpperCase() +
+    str[4].toUpperCase()
+); // console.log("H" + "E" + "L" + "L" + "O");
 
 const str2 = "hello ji\n\rkya hal";
 console.log(str2);
