@@ -1,10 +1,10 @@
 const str = "Hello";
 
 console.log(str[1]);
-// console.log("hello"[1]);
+// console.log("Hello"[1]);
 
 console.log(str.length + 10);
-// console.log("hello".length + 10);
+// console.log("Hello".length + 10);
 
 console.log(str.toLowerCase().toUpperCase()); // str.toLowerCase() = "hello"
 console.log(" mandeep ghotra  ".toUpperCase().trim()); // "MANDEEP GHOTRA"
