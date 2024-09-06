@@ -12,7 +12,8 @@ console.log(2 ** 3); // 2 * 2 * 2
 console.log(26 % 26);
 // 7. (++)  increment
 let i = 3;
-console.log(i++, ++i);
+console.log(i++, ++i, i++);
+console.log(i);
 // 8. (--)  dicrement
 
 // B. Assignment Operator (Airhmatic Operators with =)
