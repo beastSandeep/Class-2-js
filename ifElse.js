@@ -26,18 +26,23 @@ let temp = 25;
 if (temp >= 40) {
   console.log("turn on AC");
 } else {
+  // temp < 40
   if (temp >= 30) {
     console.log("go for swimming");
   } else {
+    // temp < 30
     if (temp >= 20) {
       console.log("go for a walk");
     } else {
+      // temp < 20
       if (temp >= 10) {
         console.log("put on heavy cloths");
       } else {
+        // temp < 10
         if (temp >= 0) {
           console.log("turn on heater");
         } else {
+          // temp < 0
           console.log("go to bed");
         }
       }
