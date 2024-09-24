@@ -28,3 +28,26 @@ function cube(num) {
 cube(6);
 
 // Make a function that takes two numbers and it's job is just doing exponents of numbers ex. 3⁵.
+function powerOf(num1, num2) {
+  // console.log(num * num * num);
+  console.log(num1 ** num2);
+}
+powerOf(3, 5);
+
+// Modified Function with return keyword
+function increment(num) {
+  const x = num + 1;
+  console.log(x);
+  return num;
+}
+
+console.log(increment(3));
+
+function twice(x) {
+  const double = x * 2;
+  return double;
+  console.log("jajajajajajaj");
+}
+
+const six = twice(3); // will return 6
+console.log(six);
