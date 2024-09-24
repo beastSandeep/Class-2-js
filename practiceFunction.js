@@ -2,25 +2,22 @@ const camalize = (str) => {
   // words => [ 'hello', 'my', 'name', 'is', 'anmol' ]
   const words = str.toLowerCase().split(" ");
 
-  for (let i = 0; i < words.length; i++) {
+  // we have to keep "hello" as it is thats why loops starts form 1
+  for (let i = 1; i < words.length; i++) {
+    //  let's say for now word is "name"
     const word = words[i];
 
-    // we have to keep "hello" as it is thats why condition is i >= 1
-    if (i >= 1) {
-      //  let's say for now word is "name"
+    // "name" => "n" => "N"
+    const firstCapitalLetter = word[0].toUpperCase();
 
-      // "name" => "n" => "N"
-      const firstCapitalLetter = word[0].toUpperCase();
+    // "name" => "ame"
+    const remaingWord = word.slice(1);
 
-      // "name" => "ame"
-      const remaingWord = word.slice(1);
+    // "N" + "ame" => "Name"
+    const camelCasedWord = firstCapitalLetter + remaingWord;
 
-      // "N" + "ame" => "Name"
-      const camelCasedWord = firstCapitalLetter + remaingWord;
-
-      // ["hello", "my" ,"name"] => ["hello", "My" ,"Name"]
-      words[i] = camelCasedWord;
-    }
+    // ["hello", "my" ,"name"] => ["hello", "My" ,"Name"]
+    words[i] = camelCasedWord;
   }
 
   // words => [ 'hello', 'My', 'Name', 'Is', 'Anmol' ]
@@ -30,5 +27,5 @@ const camalize = (str) => {
   return camelCasedString;
 };
 
-const newString = camalize("Hello My name is anmol"); // helloMyNameIsAnmol
+const newString = camalize("Hello My name is anMol"); // helloMyNameIsAnmol
 console.log(newString);
