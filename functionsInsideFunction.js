@@ -9,13 +9,23 @@ function app() {
 
   const multiply = (num1, num2) => {
     console.log(num1 * num2);
+    return num1 * num2;
   };
 
   console.log("Inside app");
 
-  multiply(3, 5);
+  const fifteen = multiply(3, 5);
+  console.log(fifteen + 5);
   myFunc();
   add(3, 5);
 }
 
 app();
+
+// function hi() {
+//   const message = "hello";
+//   return message;
+// }
+
+// const res = hi();
+// console.log(res);
