@@ -1,16 +1,11 @@
-// function a() {
-//   function b() {
-//     const y = "hello";
-//     console.log("inside myFunc", y);
-//   }
-//   b();
-//   console.log(y);
-// }
-// a();
-
-// console.log(y);
-
-if (true) {
-  const x = "X";
+function a() {
+  function b() {
+    const y = "hello";
+    console.log("inside myFunc", y);
+  }
+  b();
+  console.log(y);
 }
-console.log(x);
+a();
+
+console.log(y);
