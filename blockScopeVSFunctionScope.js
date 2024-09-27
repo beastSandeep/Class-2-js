@@ -35,13 +35,18 @@ function hello() {
 // }
 
 // exercise 2:-
+const firstName = "Mandeep";
+
 function x() {
   if (true) {
     var firstName = "Sandeep";
     console.log(firstName); // Sandeep
   }
 
+  console.log(firstName); // Sandeep
+
   var firstName = "Manpreet";
+
   if (true) {
     console.log(firstName); // Manpreet
   }
@@ -49,4 +54,4 @@ function x() {
 }
 
 x();
-console.log(firstName); // error: firstName is not defined
+console.log(firstName); // Mandeep
