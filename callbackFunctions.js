@@ -36,12 +36,12 @@ runner2((name, num) => {
 
 // How data goes back to caller function
 function runner(cb) {
-  const returnedValue = cb(12, 8);
+  const returnedValue = cb();
   console.log(returnedValue);
 }
 
 // Both Ways are same for returning somthing form an arrow function
-runner((num1, num2) => num1 + num2);
-// runner((num1, num2) => {
-//   return num1 + num2;
+runner(() => 10);
+// runner(() => {
+//   return 10;
 // });
