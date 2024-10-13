@@ -26,11 +26,11 @@ b(() => {
 });
 
 // How data flows in callbacks
-function runner2(cb) {
+function caller(cb) {
   cb("Sandeep", 45);
 }
 
-runner2((name, num) => {
+caller((name, num) => {
   console.log(name, num);
 });
 
@@ -41,7 +41,7 @@ function runner(cb) {
 }
 
 // Both Ways are same for returning somthing form an arrow function
-runner(() => 10);
-// runner(() => {
-//   return 10;
-// });
+// runner(() => 10);
+runner(() => {
+  return 10;
+});
