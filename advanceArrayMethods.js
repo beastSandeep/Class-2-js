@@ -68,9 +68,9 @@
 
 // 3. filter() :- filter's callback should be retrun boolean value, if it's returns "true" then that item will be filtered out otherwise if "false" then that item will not be filtered out, after the end filter method returns filtered array and it also not mutate(change) original array
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const filterArr = arr.filter((value) => value <= 5);
-console.log(filterArr);
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const filterArr = arr.filter((value) => value <= 5);
+// console.log(filterArr);
 
 // const users = [
 //   { name: "Manni", age: 18 },
@@ -90,6 +90,7 @@ console.log(filterArr);
 
 // const value = arr.reduce((accummulator, value) => accummulator + value);
 // console.log(value);
+
 // for above explaination
 // accummulator(returned value)       currentValue      return
 //            1                             2              3
@@ -128,7 +129,7 @@ console.log(filterArr);
 
 // const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const lessThanFive = arr.find((value) => value > 5);
-// console.log(lessThanFive);
+// console.log(lessThanFive); // 6
 
 // const users = [
 //   { id: 2938745, name: "Manni", age: 18 },
@@ -137,7 +138,7 @@ console.log(filterArr);
 //   { id: 8234523, name: "Mandy", age: 26 },
 // ];
 
-// const user = users.find((user) => user.id === 9567854);
+// const user = users.find((user) => user.id === 8234523);
 // console.log(user);
 
 // -----------------------------------------------------------------------------
@@ -173,7 +174,7 @@ console.log(filterArr);
 //   { id: 8234523, name: "Mandy", age: 26 },
 // ];
 
-// const isOneOfTheUserBelow18 = users.some((user) => user.age < 10);
+// const isOneOfTheUserBelow18 = users.some((user) => user.age < 18);
 // console.log(isOneOfTheUserBelow18);
 
 // -----------------------------------------------------------------------------
@@ -218,7 +219,7 @@ console.log(filterArr);
 // console.log(numbers);
 
 // const arr = [2, 4, 3, 8, 1, 0, 4, 5];
-// arr.sort((a, b) => b - a);
+// arr.sort((a, b) => a - b);
 // console.log(arr);
 
 // const users = [
