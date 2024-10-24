@@ -17,4 +17,4 @@ obj2.key3 = "value3";
 console.log("object2's proto is whole object1", obj2.__proto__);
 
 // this key doesn't exist in obj2 but it is present in obj1(proto of obj2)
-console.log(obj2.key1);
+console.log(obj2.key2);
