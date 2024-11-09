@@ -15,7 +15,7 @@ class Animal {
   }
 }
 
-// If you want to add more properties and methods while extending your class than you need to use super() functions inside class constructor and pass all the parameters thar super class need.
+// If you want to add more properties and methods while extending your class than you need to use super() functions inside class constructor and pass all the parameters that super class need.
 
 // in short super() function is just to take your parameters and gives to your super class
 
