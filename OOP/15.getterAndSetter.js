@@ -23,7 +23,7 @@ class Person {
   }
 
   set changeName(name) {
-    const arr = name.split(" ");
+    const arr = name.split(" "); // ["chachi", "420"]
     const fn = arr[0]; // chachi
     const ln = arr[1]; // 420
 
