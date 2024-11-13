@@ -4,9 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
-    <script src="./2.DOM.js"></script>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      button {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        padding: 20px;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+      }
+
+      .grandParent {
+        background-color: black;
+        text-align: center;
+        height: 300px;
+        padding: 20px 50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .parent {
+        background-color: rgb(32, 105, 189);
+        border: 2px solid white;
+        text-align: center;
+        height: 200px;
+        padding: 20px 50px;
+        color: rgb(211, 26, 211);
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .child {
+        background-color: rgb(189, 189, 32);
+        border: 2px solid black;
+        text-align: center;
+        height: 100px;
+        padding: 20px 50px;
+        color: blue;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    </style>
+    <script src="3.selectors.js" defer></script>
   </head>
   <body>
-    <h1>WOW</h1>
+    <!-- 3.selectors.js start -->
+    <h1 id="main">Hello World</h1>
+
+    <p class="amz">wow</p>
+    <span class="amz">Knowledge</span>
+
+    <p>Sandeep</p>
+
+    <input type="radio" name="gender" id="male" />
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" id="female" />
+    <label for="female">Female</label>
+    <!-- 3.selectors.js end -->
+
+    <!-- 4.textContentAndInnerText.js start -->
+    <!-- <div id="heading">
+      Mange Your Task <span style="display: none">Hello</span>
+    </div> -->
+    <!-- 4.textContentAndInnerText.js end -->
+
+    <!-- 5.style.js start -->
+    <!-- <h2 id="h2">Ek chowmin ki plate lga do!</h2> -->
+    <!-- 5.style.js end -->
+
+    <!-- 6.getAndSetAttribute.js start -->
+    <!-- <a id="anchor" href="https://www.google.com">Google</a> -->
+    <!-- 6.getAndSetAttribute.js end -->
+
+    <!-- 7.DOMTree.js start -->
+    <!-- <p>Hello World</p> -->
+    <!-- 7.DOMTree.js end -->
+
+    <!-- 8.classList.js start -->
+    <!-- <section class="container btn">Hello</section> -->
+    <!-- 8.classList.js end -->
+
+    <!-- 10.addingAndRemovingElements.js start -->
+    <!-- <ul class="list">
+      <li>task 1</li>
+      <li>task 2</li>
+      <li>task 3</li>
+    </ul> -->
+    <!-- 10.addingAndRemovingElements.js end -->
+
+    <!-- 12.getBoundingClientRect.js start -->
+    <!-- <button id="btn">Hii !</button> -->
+    <!-- 12.getBoundingClientRect.js end -->
+
+    <!-- 13.events.js start -->
+    <!-- <button id="btn">Hii !</button>
+
+    <div class="my-buttons">
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+      <button>Button 4</button>
+    </div> -->
+    <!-- 13.events.js end -->
+
+    <!-- 14.eventObject.js start -->
+    <!-- <button id="btn">Send Hello</button> -->
+    <!-- 14.eventObject.js end -->
+
+    <!-- 16.eventBubblingAndCapturing.js start -->
+    <!-- <div class="grandParent">
+      GrandParent
+
+      <div class="parent">
+        Parent
+
+        <div class="child">Child</div>
+      </div>
+    </div> -->
+    <!-- 16.eventBubblingAndCapturing.js end -->
   </body>
 </html>
