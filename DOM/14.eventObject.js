@@ -8,6 +8,7 @@
 const btn = document.getElementById("btn");
 
 btn.addEventListener("click", function (eventObject) {
+  console.log(eventObject);
   const element = eventObject.target; // btn element
   element.innerText = "WOW";
 });
