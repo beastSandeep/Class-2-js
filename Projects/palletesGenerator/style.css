@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 body {
+  margin: 5px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 .pallete {
   border: 1px solid black;
