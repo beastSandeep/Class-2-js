@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+}
+
+.glow {
+  position: absolute;
+  border: 1px solid white;
+  box-shadow: 0rem 0rem 2rem 0.5rem rgb(255, 0, 140);
+}
