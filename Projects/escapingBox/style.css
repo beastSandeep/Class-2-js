@@ -9,4 +9,6 @@
   height: 50px;
   background-color: aqua;
   position: absolute;
+
+  transition: all 200ms ease-out 20ms;
 }
