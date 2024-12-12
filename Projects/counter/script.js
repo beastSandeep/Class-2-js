@@ -3,11 +3,6 @@ const dec = document.getElementById("decrement");
 const count = document.getElementById("count");
 const bars = document.getElementsByClassName("bar");
 
-// for (let i = 0; i < bars.length; i++) {
-//   const bar = bars[i];
-//   bar.style.display = "none";
-// }
-
 inc.addEventListener("click", function () {
   // increment button listner
   const currentCount = Number(count.innerText); // we are reading count and converting into a number and after that we are storing it in a variable.
