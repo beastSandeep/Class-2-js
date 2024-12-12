@@ -18,11 +18,6 @@ svg.addEventListener("click", function (e) {
   } else {
     const line = `<line x1=${coordinates.x1} y1=${coordinates.y1} x2=${x} y2=${y} stroke="gray" stroke-width="2" stroke-linecap="round" stroke-dasharray="5,5"/>`;
     svg.innerHTML += line;
-
-    // const path = `<path d="M ${window.innerWidth} ${window.innerHeight} q ${coordinates.x1} -300 300 0" stroke="blue" fill="none" stroke-width="4"/>`;
-    // svg.innerHTML += path;
-    coordinates.x1 = 0;
-    coordinates.y1 = 0;
   }
 
   firstCircle = !firstCircle;
