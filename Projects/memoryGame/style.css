@@ -62,4 +62,5 @@ body {
   bottom: 100px;
   font-size: 50px;
   font-weight: bold;
+  user-select: none;
 }

@@ -46,6 +46,8 @@ for (let i = 0; i < cells.length; i++) {
       clicks.pop();
     }
 
+    cells[clicks[clicks.length - 1].pos].style.pointerEvents = "none";
+
     clicksCount++;
     p.innerText = clicksCount;
 
@@ -53,11 +55,7 @@ for (let i = 0; i < cells.length; i++) {
       const first = clicks[0];
       const second = clicks[1];
 
-      if (first.val === second.val) {
-        // match found
-        cells[first.pos].style.pointerEvents = "none";
-        cells[second.pos].style.pointerEvents = "none";
-      } else {
+      if (first.val !== second.val) {
         // match not found
         setTimeout(() => {
           cells[first.pos].children[0].classList.toggle("hidden");
@@ -65,6 +63,9 @@ for (let i = 0; i < cells.length; i++) {
 
           cells[second.pos].children[0].classList.toggle("hidden");
           cells[second.pos].children[1].classList.toggle("hidden");
+
+          cells[first.pos].style.pointerEvents = "auto";
+          cells[second.pos].style.pointerEvents = "auto";
         }, 300);
       }
 
