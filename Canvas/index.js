@@ -1,29 +1,17 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-const canvasWidth = canvas.getClientRects()[0].width;
-const canvasHeight = canvas.getClientRects()[0].height;
+ctx.fillRect(20, 40, 100, 100);
 
-ctx.fillStyle = "green";
-ctx.fillRect(100, 200, 50, 50);
-
-ctx.fillStyle = "orange";
-ctx.fillRect(200, 100, 50, 50);
-
-ctx.strokeStyle = "black";
-ctx.strokeRect(500, 300, 100, 50);
-
-ctx.clearRect(225, 125, 25, 25);
-
-ctx.fillStyle = "black";
-ctx.strokeStyle = "black";
-ctx.fillRect(25, 25, 100, 100);
-ctx.clearRect(45, 45, 60, 60);
-ctx.strokeRect(50, 50, 50, 50);
+ctx.lineWidth = 3;
+ctx.strokeStyle = "red";
+ctx.strokeRect(200, 300, 100, 100);
 
 ctx.fillStyle = "red";
-ctx.beginPath();
-ctx.moveTo(300, 250);
-ctx.lineTo(350, 300);
-ctx.lineTo(350, 200);
-ctx.fill();
+ctx.fillRect(150, 100, 100, 100);
+
+ctx.fillStyle = "orange";
+ctx.fillRect(350, 40, 100, 100);
+
+ctx.clearRect(400, 90, 50, 50);
+// ctx.clearRect(200 - ctx.lineWidth, 300 - ctx.lineWidth, 50, 50);
