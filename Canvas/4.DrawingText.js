@@ -40,6 +40,7 @@
 
 // ctx.measureText():- Returns a TextMetrics object containing the width, in pixels, that the specified text will be when drawn in the current text style.
 
-// const ctx = document.getElementById("canvas").getContext("2d");
-// const text = ctx.measureText("foo"); // TextMetrics object
-// text.width; // 16;
+const ctx = document.getElementById("canvas").getContext("2d");
+const text = ctx.measureText("foo"); // TextMetrics object
+console.log(text);
+text.width; // 13.9;
