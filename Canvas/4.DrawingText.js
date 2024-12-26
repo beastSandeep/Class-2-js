@@ -1,20 +1,20 @@
 // 1. fillText(text, x, y [, maxWidth]) :- Fills a given text at the given (x,y) position. Optionally with a maximum width to draw.
 
-// function draw() {
-//   const ctx = document.getElementById("canvas").getContext("2d");
-//   ctx.font = "48px serif";
-//   ctx.fillText("Hello world", 10, 50);
-// }
-// draw();
+function draw() {
+  const ctx = document.getElementById("canvas").getContext("2d");
+  ctx.font = "48px serif";
+  ctx.fillText("Hello world", 10, 50);
+}
+draw();
 
 // 2. strokeText(text, x, y [, maxWidth]):- Strokes a given text at the given (x,y) position. Optionally with a maximum width to draw.
 
-// function draw2() {
-//   const ctx = document.getElementById("canvas").getContext("2d");
-//   ctx.font = "48px serif";
-//   ctx.strokeText("Hello world", 10, 50);
-// }
-// draw2();
+function draw2() {
+  const ctx = document.getElementById("canvas").getContext("2d");
+  ctx.font = "48px serif";
+  ctx.strokeText("Hello world", 10, 100);
+}
+draw2();
 
 // ---------------------------------------------------------------------
 
@@ -43,4 +43,3 @@
 const ctx = document.getElementById("canvas").getContext("2d");
 const text = ctx.measureText("foo"); // TextMetrics object
 console.log(text);
-text.width; // 13.9;
